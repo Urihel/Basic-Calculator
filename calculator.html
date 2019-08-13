@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input {
+        width: 150px;
+        height: 100px;
+        font-size: 75px;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #000;
+        color: #fff;
+        border-style: none;
+    }
+    #myform {
+        margin-left: 375px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-right: 150px;
+        margin-top: 20px;
+    }
+    #display {
+        width: 675px;
+        height: 100px;
+        text-align: center;
+        background-color: #1f80c9;
+    }
+    #add {
+        background-color: #cc5c11;
+    }
+    #subtract {
+        background-color: #ba55d3;
+    }
+    #multi {
+        background-color: #7db1b2;
+    }
+    #divide {
+        background-color: green;
+    }
+    #clear {
+        background-color: #cc0000;
+    }
+    </style>
+</head>
+<body>
+    <h1>BASIC CALCULATOR</h1>
+    <form id="myform" name="calc">
+        <input id="display" name="display">
+        <br/>
+        <input type="button" value="0" Onclick="calc.display.value+='0'">
+        <input type="button" value="1" Onclick="calc.display.value+='1'">
+        <input type="button" value="2" Onclick="calc.display.value+='2'">
+        <input id="add" type="button" value="+" Onclick="calc.display.value+='+'">
+        <br/>
+        <input type="button" value="3" Onclick="calc.display.value+='3'">
+        <input type="button" value="4" Onclick="calc.display.value+='4'">
+        <input type="button" value="5" Onclick="calc.display.value+='5'">
+        <input id="subtract" type="button" value="-" Onclick="calc.display.value+='-'">
+        <br/>
+        <input type="button" value="6" Onclick="calc.display.value+='6'">
+        <input type="button" value="7" Onclick="calc.display.value+='7'">
+        <input type="button" value="8" Onclick="calc.display.value+='8'">
+        <input id="multi" type="button" value="*" Onclick="calc.display.value+='*'">
+        <br/>
+        <input type="button" value="9" Onclick="calc.display.value+='9'">
+        <input id="clear" type="button" value="C" Onclick="calc.display.value=''">
+        <input type="button" value="=" Onclick="calc.display.value=eval(calc.display.value)">
+        <input id="divide" type="button" value="&#247;" Onclick="calc.display.value+='/'">
+
+
+    </form>
+    
+</body>
+</html>
